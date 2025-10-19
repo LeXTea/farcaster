@@ -1,0 +1,337 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for farcaster/build/server/vendor-chunks/jose.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">farcaster/build/server/vendor-chunks</a> jose.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/63</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/63</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >"use strict";</span></span></span>
+<span class="cstat-no" title="statement not covered" >/*</span>
+<span class="cstat-no" title="statement not covered" > * ATTENTION: An "eval-source-map" devtool has been used.</span>
+<span class="cstat-no" title="statement not covered" > * This devtool is neither made for production nor for readable output files.</span>
+<span class="cstat-no" title="statement not covered" > * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.</span>
+<span class="cstat-no" title="statement not covered" > * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)</span>
+<span class="cstat-no" title="statement not covered" > * or disable the default devtool with "devtool: false".</span>
+<span class="cstat-no" title="statement not covered" > * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).</span>
+<span class="cstat-no" title="statement not covered" > */</span>
+<span class="cstat-no" title="statement not covered" >exports.id = "vendor-chunks/jose";</span>
+<span class="cstat-no" title="statement not covered" >exports.ids = ["vendor-chunks/jose"];</span>
+<span class="cstat-no" title="statement not covered" >exports.modules = {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ "(ssr)/./node_modules/jose/dist/node/esm/lib/buffer_utils.js":</span>
+<span class="cstat-no" title="statement not covered" >/*!*************************************************************!*\</span>
+<span class="cstat-no" title="statement not covered" >  !*** ./node_modules/jose/dist/node/esm/lib/buffer_utils.js ***!</span>
+<span class="cstat-no" title="statement not covered" >  \*************************************************************/</span>
+<span class="cstat-no" title="statement not covered" >/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) =&gt; {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   concat: () =&gt; (/* binding */ concat),\n/* harmony export */   concatKdf: () =&gt; (/* binding */ concatKdf),\n/* harmony export */   decoder: () =&gt; (/* binding */ decoder),\n/* harmony export */   encoder: () =&gt; (/* binding */ encoder),\n/* harmony export */   lengthAndInput: () =&gt; (/* binding */ lengthAndInput),\n/* harmony export */   p2s: () =&gt; (/* binding */ p2s),\n/* harmony export */   uint32be: () =&gt; (/* binding */ uint32be),\n/* harmony export */   uint64be: () =&gt; (/* binding */ uint64be)\n/* harmony export */ });\n/* harmony import */ var _runtime_digest_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../runtime/digest.js */ \"(ssr)/./node_modules/jose/dist/node/esm/runtime/digest.js\");\n\nconst encoder = new TextEncoder();\nconst decoder = new TextDecoder();\nconst MAX_INT32 = 2 ** 32;\nfunction concat(...buffers) {\n    const size = buffers.reduce((acc, { length }) =&gt; acc + length, 0);\n    const buf = new Uint8Array(size);\n    let i = 0;\n    for (const buffer of buffers) {\n        buf.set(buffer, i);\n        i += buffer.length;\n    }\n    return buf;\n}\nfunction p2s(alg, p2sInput) {\n    return concat(encoder.encode(alg), new Uint8Array([0]), p2sInput);\n}\nfunction writeUInt32BE(buf, value, offset) {\n    if (value &lt; 0 || value &gt;= MAX_INT32) {\n        throw new RangeError(`value must be &gt;= 0 and &lt;= ${MAX_INT32 - 1}. Received ${value}`);\n    }\n    buf.set([value &gt;&gt;&gt; 24, value &gt;&gt;&gt; 16, value &gt;&gt;&gt; 8, value &amp; 0xff], offset);\n}\nfunction uint64be(value) {\n    const high = Math.floor(value / MAX_INT32);\n    const low = value % MAX_INT32;\n    const buf = new Uint8Array(8);\n    writeUInt32BE(buf, high, 0);\n    writeUInt32BE(buf, low, 4);\n    return buf;\n}\nfunction uint32be(value) {\n    const buf = new Uint8Array(4);\n    writeUInt32BE(buf, value);\n    return buf;\n}\nfunction lengthAndInput(input) {\n    return concat(uint32be(input.length), input);\n}\nasync function concatKdf(secret, bits, value) {\n    const iterations = Math.ceil((bits &gt;&gt; 3) / 32);\n    const res = new Uint8Array(iterations * 32);\n    for (let iter = 0; iter &lt; iterations; iter++) {\n        const buf = new Uint8Array(4 + secret.length + value.length);\n        buf.set(uint32be(iter + 1));\n        buf.set(secret, 4);\n        buf.set(value, 4 + secret.length);\n        res.set(await (0,_runtime_digest_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('sha256', buf), iter * 32);\n    }\n    return res.slice(0, bits &gt;&gt; 3);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL2xpYi9idWZmZXJfdXRpbHMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBQTBDO0FBQ25DO0FBQ0E7QUFDUDtBQUNPO0FBQ1Asd0NBQXdDLFFBQVE7QUFDaEQ7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNPO0FBQ1A7QUFDQTtBQUNBO0FBQ0E7QUFDQSwwREFBMEQsY0FBYyxhQUFhLE1BQU07QUFDM0Y7QUFDQTtBQUNBO0FBQ087QUFDUDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNPO0FBQ1A7QUFDQTtBQUNBO0FBQ0E7QUFDTztBQUNQO0FBQ0E7QUFDTztBQUNQO0FBQ0E7QUFDQSx1QkFBdUIsbUJBQW1CO0FBQzFDO0FBQ0E7QUFDQTtBQUNBO0FBQ0Esc0JBQXNCLDhEQUFNO0FBQzVCO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsiL2hvbWUvd3NseHQvY3M0NzIvZmFyY2FzdGVyL25vZGVfbW9kdWxlcy9qb3NlL2Rpc3Qvbm9kZS9lc20vbGliL2J1ZmZlcl91dGlscy5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZGlnZXN0IGZyb20gJy4uL3J1bnRpbWUvZGlnZXN0LmpzJztcbmV4cG9ydCBjb25zdCBlbmNvZGVyID0gbmV3IFRleHRFbmNvZGVyKCk7XG5leHBvcnQgY29uc3QgZGVjb2RlciA9IG5ldyBUZXh0RGVjb2RlcigpO1xuY29uc3QgTUFYX0lOVDMyID0gMiAqKiAzMjtcbmV4cG9ydCBmdW5jdGlvbiBjb25jYXQoLi4uYnVmZmVycykge1xuICAgIGNvbnN0IHNpemUgPSBidWZmZXJzLnJlZHVjZSgoYWNjLCB7IGxlbmd0aCB9KSA9PiBhY2MgKyBsZW5ndGgsIDApO1xuICAgIGNvbnN0IGJ1ZiA9IG5ldyBVaW50OEFycmF5KHNpemUpO1xuICAgIGxldCBpID0gMDtcbiAgICBmb3IgKGNvbnN0IGJ1ZmZlciBvZiBidWZmZXJzKSB7XG4gICAgICAgIGJ1Zi5zZXQoYnVmZmVyLCBpKTtcbiAgICAgICAgaSArPSBidWZmZXIubGVuZ3RoO1xuICAgIH1cbiAgICByZXR1cm4gYnVmO1xufVxuZXhwb3J0IGZ1bmN0aW9uIHAycyhhbGcsIHAyc0lucHV0KSB7XG4gICAgcmV0dXJuIGNvbmNhdChlbmNvZGVyLmVuY29kZShhbGcpLCBuZXcgVWludDhBcnJheShbMF0pLCBwMnNJbnB1dCk7XG59XG5mdW5jdGlvbiB3cml0ZVVJbnQzMkJFKGJ1ZiwgdmFsdWUsIG9mZnNldCkge1xuICAgIGlmICh2YWx1ZSA8IDAgfHwgdmFsdWUgPj0gTUFYX0lOVDMyKSB7XG4gICAgICAgIHRocm93IG5ldyBSYW5nZUVycm9yKGB2YWx1ZSBtdXN0IGJlID49IDAgYW5kIDw9ICR7TUFYX0lOVDMyIC0gMX0uIFJlY2VpdmVkICR7dmFsdWV9YCk7XG4gICAgfVxuICAgIGJ1Zi5zZXQoW3ZhbHVlID4+PiAyNCwgdmFsdWUgPj4+IDE2LCB2YWx1ZSA+Pj4gOCwgdmFsdWUgJiAweGZmXSwgb2Zmc2V0KTtcbn1cbmV4cG9ydCBmdW5jdGlvbiB1aW50NjRiZSh2YWx1ZSkge1xuICAgIGNvbnN0IGhpZ2ggPSBNYXRoLmZsb29yKHZhbHVlIC8gTUFYX0lOVDMyKTtcbiAgICBjb25zdCBsb3cgPSB2YWx1ZSAlIE1BWF9JTlQzMjtcbiAgICBjb25zdCBidWYgPSBuZXcgVWludDhBcnJheSg4KTtcbiAgICB3cml0ZVVJbnQzMkJFKGJ1ZiwgaGlnaCwgMCk7XG4gICAgd3JpdGVVSW50MzJCRShidWYsIGxvdywgNCk7XG4gICAgcmV0dXJuIGJ1Zjtcbn1cbmV4cG9ydCBmdW5jdGlvbiB1aW50MzJiZSh2YWx1ZSkge1xuICAgIGNvbnN0IGJ1ZiA9IG5ldyBVaW50OEFycmF5KDQpO1xuICAgIHdyaXRlVUludDMyQkUoYnVmLCB2YWx1ZSk7XG4gICAgcmV0dXJuIGJ1Zjtcbn1cbmV4cG9ydCBmdW5jdGlvbiBsZW5ndGhBbmRJbnB1dChpbnB1dCkge1xuICAgIHJldHVybiBjb25jYXQodWludDMyYmUoaW5wdXQubGVuZ3RoKSwgaW5wdXQpO1xufVxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGNvbmNhdEtkZihzZWNyZXQsIGJpdHMsIHZhbHVlKSB7XG4gICAgY29uc3QgaXRlcmF0aW9ucyA9IE1hdGguY2VpbCgoYml0cyA+PiAzKSAvIDMyKTtcbiAgICBjb25zdCByZXMgPSBuZXcgVWludDhBcnJheShpdGVyYXRpb25zICogMzIpO1xuICAgIGZvciAobGV0IGl0ZXIgPSAwOyBpdGVyIDwgaXRlcmF0aW9uczsgaXRlcisrKSB7XG4gICAgICAgIGNvbnN0IGJ1ZiA9IG5ldyBVaW50OEFycmF5KDQgKyBzZWNyZXQubGVuZ3RoICsgdmFsdWUubGVuZ3RoKTtcbiAgICAgICAgYnVmLnNldCh1aW50MzJiZShpdGVyICsgMSkpO1xuICAgICAgICBidWYuc2V0KHNlY3JldCwgNCk7XG4gICAgICAgIGJ1Zi5zZXQodmFsdWUsIDQgKyBzZWNyZXQubGVuZ3RoKTtcbiAgICAgICAgcmVzLnNldChhd2FpdCBkaWdlc3QoJ3NoYTI1NicsIGJ1ZiksIGl0ZXIgKiAzMik7XG4gICAgfVxuICAgIHJldHVybiByZXMuc2xpY2UoMCwgYml0cyA+PiAzKTtcbn1cbiJdLCJuYW1lcyI6W10sImlnbm9yZUxpc3QiOlswXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/jose/dist/node/esm/lib/buffer_utils.js\n");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ }),</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ "(ssr)/./node_modules/jose/dist/node/esm/lib/is_object.js":</span>
+<span class="cstat-no" title="statement not covered" >/*!**********************************************************!*\</span>
+<span class="cstat-no" title="statement not covered" >  !*** ./node_modules/jose/dist/node/esm/lib/is_object.js ***!</span>
+<span class="cstat-no" title="statement not covered" >  \**********************************************************/</span>
+<span class="cstat-no" title="statement not covered" >/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) =&gt; {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () =&gt; (/* binding */ isObject)\n/* harmony export */ });\nfunction isObjectLike(value) {\n    return typeof value === 'object' &amp;&amp; value !== null;\n}\nfunction isObject(input) {\n    if (!isObjectLike(input) || Object.prototype.toString.call(input) !== '[object Object]') {\n        return false;\n    }\n    if (Object.getPrototypeOf(input) === null) {\n        return true;\n    }\n    let proto = input;\n    while (Object.getPrototypeOf(proto) !== null) {\n        proto = Object.getPrototypeOf(proto);\n    }\n    return Object.getPrototypeOf(input) === proto;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL2xpYi9pc19vYmplY3QuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBO0FBQ0E7QUFDQTtBQUNlO0FBQ2Y7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlcyI6WyIvaG9tZS93c2x4dC9jczQ3Mi9mYXJjYXN0ZXIvbm9kZV9tb2R1bGVzL2pvc2UvZGlzdC9ub2RlL2VzbS9saWIvaXNfb2JqZWN0LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImZ1bmN0aW9uIGlzT2JqZWN0TGlrZSh2YWx1ZSkge1xuICAgIHJldHVybiB0eXBlb2YgdmFsdWUgPT09ICdvYmplY3QnICYmIHZhbHVlICE9PSBudWxsO1xufVxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gaXNPYmplY3QoaW5wdXQpIHtcbiAgICBpZiAoIWlzT2JqZWN0TGlrZShpbnB1dCkgfHwgT2JqZWN0LnByb3RvdHlwZS50b1N0cmluZy5jYWxsKGlucHV0KSAhPT0gJ1tvYmplY3QgT2JqZWN0XScpIHtcbiAgICAgICAgcmV0dXJuIGZhbHNlO1xuICAgIH1cbiAgICBpZiAoT2JqZWN0LmdldFByb3RvdHlwZU9mKGlucHV0KSA9PT0gbnVsbCkge1xuICAgICAgICByZXR1cm4gdHJ1ZTtcbiAgICB9XG4gICAgbGV0IHByb3RvID0gaW5wdXQ7XG4gICAgd2hpbGUgKE9iamVjdC5nZXRQcm90b3R5cGVPZihwcm90bykgIT09IG51bGwpIHtcbiAgICAgICAgcHJvdG8gPSBPYmplY3QuZ2V0UHJvdG90eXBlT2YocHJvdG8pO1xuICAgIH1cbiAgICByZXR1cm4gT2JqZWN0LmdldFByb3RvdHlwZU9mKGlucHV0KSA9PT0gcHJvdG87XG59XG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbMF0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/jose/dist/node/esm/lib/is_object.js\n");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ }),</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ "(ssr)/./node_modules/jose/dist/node/esm/runtime/base64url.js":</span>
+<span class="cstat-no" title="statement not covered" >/*!**************************************************************!*\</span>
+<span class="cstat-no" title="statement not covered" >  !*** ./node_modules/jose/dist/node/esm/runtime/base64url.js ***!</span>
+<span class="cstat-no" title="statement not covered" >  \**************************************************************/</span>
+<span class="cstat-no" title="statement not covered" >/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) =&gt; {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   decode: () =&gt; (/* binding */ decode),\n/* harmony export */   decodeBase64: () =&gt; (/* binding */ decodeBase64),\n/* harmony export */   encode: () =&gt; (/* binding */ encode),\n/* harmony export */   encodeBase64: () =&gt; (/* binding */ encodeBase64)\n/* harmony export */ });\n/* harmony import */ var node_buffer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! node:buffer */ \"node:buffer\");\n/* harmony import */ var _lib_buffer_utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/buffer_utils.js */ \"(ssr)/./node_modules/jose/dist/node/esm/lib/buffer_utils.js\");\n\n\nfunction normalize(input) {\n    let encoded = input;\n    if (encoded instanceof Uint8Array) {\n        encoded = _lib_buffer_utils_js__WEBPACK_IMPORTED_MODULE_1__.decoder.decode(encoded);\n    }\n    return encoded;\n}\nconst encode = (input) =&gt; node_buffer__WEBPACK_IMPORTED_MODULE_0__.Buffer.from(input).toString('base64url');\nconst decodeBase64 = (input) =&gt; new Uint8Array(node_buffer__WEBPACK_IMPORTED_MODULE_0__.Buffer.from(input, 'base64'));\nconst encodeBase64 = (input) =&gt; node_buffer__WEBPACK_IMPORTED_MODULE_0__.Buffer.from(input).toString('base64');\n\nconst decode = (input) =&gt; new Uint8Array(node_buffer__WEBPACK_IMPORTED_MODULE_0__.Buffer.from(normalize(input), 'base64url'));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL3J1bnRpbWUvYmFzZTY0dXJsLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFxQztBQUNZO0FBQ2pEO0FBQ0E7QUFDQTtBQUNBLGtCQUFrQix5REFBTztBQUN6QjtBQUNBO0FBQ0E7QUFDQSwwQkFBMEIsK0NBQU07QUFDekIsK0NBQStDLCtDQUFNO0FBQ3JELGdDQUFnQywrQ0FBTTtBQUMzQjtBQUNYLHlDQUF5QywrQ0FBTSIsInNvdXJjZXMiOlsiL2hvbWUvd3NseHQvY3M0NzIvZmFyY2FzdGVyL25vZGVfbW9kdWxlcy9qb3NlL2Rpc3Qvbm9kZS9lc20vcnVudGltZS9iYXNlNjR1cmwuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQnVmZmVyIH0gZnJvbSAnbm9kZTpidWZmZXInO1xuaW1wb3J0IHsgZGVjb2RlciB9IGZyb20gJy4uL2xpYi9idWZmZXJfdXRpbHMuanMnO1xuZnVuY3Rpb24gbm9ybWFsaXplKGlucHV0KSB7XG4gICAgbGV0IGVuY29kZWQgPSBpbnB1dDtcbiAgICBpZiAoZW5jb2RlZCBpbnN0YW5jZW9mIFVpbnQ4QXJyYXkpIHtcbiAgICAgICAgZW5jb2RlZCA9IGRlY29kZXIuZGVjb2RlKGVuY29kZWQpO1xuICAgIH1cbiAgICByZXR1cm4gZW5jb2RlZDtcbn1cbmNvbnN0IGVuY29kZSA9IChpbnB1dCkgPT4gQnVmZmVyLmZyb20oaW5wdXQpLnRvU3RyaW5nKCdiYXNlNjR1cmwnKTtcbmV4cG9ydCBjb25zdCBkZWNvZGVCYXNlNjQgPSAoaW5wdXQpID0+IG5ldyBVaW50OEFycmF5KEJ1ZmZlci5mcm9tKGlucHV0LCAnYmFzZTY0JykpO1xuZXhwb3J0IGNvbnN0IGVuY29kZUJhc2U2NCA9IChpbnB1dCkgPT4gQnVmZmVyLmZyb20oaW5wdXQpLnRvU3RyaW5nKCdiYXNlNjQnKTtcbmV4cG9ydCB7IGVuY29kZSB9O1xuZXhwb3J0IGNvbnN0IGRlY29kZSA9IChpbnB1dCkgPT4gbmV3IFVpbnQ4QXJyYXkoQnVmZmVyLmZyb20obm9ybWFsaXplKGlucHV0KSwgJ2Jhc2U2NHVybCcpKTtcbiJdLCJuYW1lcyI6W10sImlnbm9yZUxpc3QiOlswXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/jose/dist/node/esm/runtime/base64url.js\n");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ }),</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ "(ssr)/./node_modules/jose/dist/node/esm/runtime/digest.js":</span>
+<span class="cstat-no" title="statement not covered" >/*!***********************************************************!*\</span>
+<span class="cstat-no" title="statement not covered" >  !*** ./node_modules/jose/dist/node/esm/runtime/digest.js ***!</span>
+<span class="cstat-no" title="statement not covered" >  \***********************************************************/</span>
+<span class="cstat-no" title="statement not covered" >/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) =&gt; {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () =&gt; (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var node_crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! node:crypto */ \"node:crypto\");\n\nconst digest = (algorithm, data) =&gt; (0,node_crypto__WEBPACK_IMPORTED_MODULE_0__.createHash)(algorithm).update(data).digest();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (digest);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL3J1bnRpbWUvZGlnZXN0LmpzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQXlDO0FBQ3pDLG9DQUFvQyx1REFBVTtBQUM5QyxpRUFBZSxNQUFNLEVBQUMiLCJzb3VyY2VzIjpbIi9ob21lL3dzbHh0L2NzNDcyL2ZhcmNhc3Rlci9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL3J1bnRpbWUvZGlnZXN0LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNyZWF0ZUhhc2ggfSBmcm9tICdub2RlOmNyeXB0byc7XG5jb25zdCBkaWdlc3QgPSAoYWxnb3JpdGhtLCBkYXRhKSA9PiBjcmVhdGVIYXNoKGFsZ29yaXRobSkudXBkYXRlKGRhdGEpLmRpZ2VzdCgpO1xuZXhwb3J0IGRlZmF1bHQgZGlnZXN0O1xuIl0sIm5hbWVzIjpbXSwiaWdub3JlTGlzdCI6WzBdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/jose/dist/node/esm/runtime/digest.js\n");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ }),</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ "(ssr)/./node_modules/jose/dist/node/esm/util/base64url.js":</span>
+<span class="cstat-no" title="statement not covered" >/*!***********************************************************!*\</span>
+<span class="cstat-no" title="statement not covered" >  !*** ./node_modules/jose/dist/node/esm/util/base64url.js ***!</span>
+<span class="cstat-no" title="statement not covered" >  \***********************************************************/</span>
+<span class="cstat-no" title="statement not covered" >/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) =&gt; {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   decode: () =&gt; (/* binding */ decode),\n/* harmony export */   encode: () =&gt; (/* binding */ encode)\n/* harmony export */ });\n/* harmony import */ var _runtime_base64url_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../runtime/base64url.js */ \"(ssr)/./node_modules/jose/dist/node/esm/runtime/base64url.js\");\n\nconst encode = _runtime_base64url_js__WEBPACK_IMPORTED_MODULE_0__.encode;\nconst decode = _runtime_base64url_js__WEBPACK_IMPORTED_MODULE_0__.decode;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL3V0aWwvYmFzZTY0dXJsLmpzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUFxRDtBQUM5QyxlQUFlLHlEQUFnQjtBQUMvQixlQUFlLHlEQUFnQiIsInNvdXJjZXMiOlsiL2hvbWUvd3NseHQvY3M0NzIvZmFyY2FzdGVyL25vZGVfbW9kdWxlcy9qb3NlL2Rpc3Qvbm9kZS9lc20vdXRpbC9iYXNlNjR1cmwuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgYmFzZTY0dXJsIGZyb20gJy4uL3J1bnRpbWUvYmFzZTY0dXJsLmpzJztcbmV4cG9ydCBjb25zdCBlbmNvZGUgPSBiYXNlNjR1cmwuZW5jb2RlO1xuZXhwb3J0IGNvbnN0IGRlY29kZSA9IGJhc2U2NHVybC5kZWNvZGU7XG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbMF0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/jose/dist/node/esm/util/base64url.js\n");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ }),</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ "(ssr)/./node_modules/jose/dist/node/esm/util/decode_jwt.js":</span>
+<span class="cstat-no" title="statement not covered" >/*!************************************************************!*\</span>
+<span class="cstat-no" title="statement not covered" >  !*** ./node_modules/jose/dist/node/esm/util/decode_jwt.js ***!</span>
+<span class="cstat-no" title="statement not covered" >  \************************************************************/</span>
+<span class="cstat-no" title="statement not covered" >/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) =&gt; {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   decodeJwt: () =&gt; (/* binding */ decodeJwt)\n/* harmony export */ });\n/* harmony import */ var _base64url_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./base64url.js */ \"(ssr)/./node_modules/jose/dist/node/esm/util/base64url.js\");\n/* harmony import */ var _lib_buffer_utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/buffer_utils.js */ \"(ssr)/./node_modules/jose/dist/node/esm/lib/buffer_utils.js\");\n/* harmony import */ var _lib_is_object_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lib/is_object.js */ \"(ssr)/./node_modules/jose/dist/node/esm/lib/is_object.js\");\n/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./errors.js */ \"(ssr)/./node_modules/jose/dist/node/esm/util/errors.js\");\n\n\n\n\nfunction decodeJwt(jwt) {\n    if (typeof jwt !== 'string')\n        throw new _errors_js__WEBPACK_IMPORTED_MODULE_0__.JWTInvalid('JWTs must use Compact JWS serialization, JWT must be a string');\n    const { 1: payload, length } = jwt.split('.');\n    if (length === 5)\n        throw new _errors_js__WEBPACK_IMPORTED_MODULE_0__.JWTInvalid('Only JWTs using Compact JWS serialization can be decoded');\n    if (length !== 3)\n        throw new _errors_js__WEBPACK_IMPORTED_MODULE_0__.JWTInvalid('Invalid JWT');\n    if (!payload)\n        throw new _errors_js__WEBPACK_IMPORTED_MODULE_0__.JWTInvalid('JWTs must contain a payload');\n    let decoded;\n    try {\n        decoded = (0,_base64url_js__WEBPACK_IMPORTED_MODULE_1__.decode)(payload);\n    }\n    catch {\n        throw new _errors_js__WEBPACK_IMPORTED_MODULE_0__.JWTInvalid('Failed to base64url decode the payload');\n    }\n    let result;\n    try {\n        result = JSON.parse(_lib_buffer_utils_js__WEBPACK_IMPORTED_MODULE_2__.decoder.decode(decoded));\n    }\n    catch {\n        throw new _errors_js__WEBPACK_IMPORTED_MODULE_0__.JWTInvalid('Failed to parse the decoded payload as JSON');\n    }\n    if (!(0,_lib_is_object_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(result))\n        throw new _errors_js__WEBPACK_IMPORTED_MODULE_0__.JWTInvalid('Invalid JWT Claims Set');\n    return result;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL3V0aWwvZGVjb2RlX2p3dC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFxRDtBQUNKO0FBQ047QUFDRjtBQUNsQztBQUNQO0FBQ0Esa0JBQWtCLGtEQUFVO0FBQzVCLFlBQVkscUJBQXFCO0FBQ2pDO0FBQ0Esa0JBQWtCLGtEQUFVO0FBQzVCO0FBQ0Esa0JBQWtCLGtEQUFVO0FBQzVCO0FBQ0Esa0JBQWtCLGtEQUFVO0FBQzVCO0FBQ0E7QUFDQSxrQkFBa0IscURBQVM7QUFDM0I7QUFDQTtBQUNBLGtCQUFrQixrREFBVTtBQUM1QjtBQUNBO0FBQ0E7QUFDQSw0QkFBNEIseURBQU87QUFDbkM7QUFDQTtBQUNBLGtCQUFrQixrREFBVTtBQUM1QjtBQUNBLFNBQVMsNkRBQVE7QUFDakIsa0JBQWtCLGtEQUFVO0FBQzVCO0FBQ0EiLCJzb3VyY2VzIjpbIi9ob21lL3dzbHh0L2NzNDcyL2ZhcmNhc3Rlci9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL3V0aWwvZGVjb2RlX2p3dC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBkZWNvZGUgYXMgYmFzZTY0dXJsIH0gZnJvbSAnLi9iYXNlNjR1cmwuanMnO1xuaW1wb3J0IHsgZGVjb2RlciB9IGZyb20gJy4uL2xpYi9idWZmZXJfdXRpbHMuanMnO1xuaW1wb3J0IGlzT2JqZWN0IGZyb20gJy4uL2xpYi9pc19vYmplY3QuanMnO1xuaW1wb3J0IHsgSldUSW52YWxpZCB9IGZyb20gJy4vZXJyb3JzLmpzJztcbmV4cG9ydCBmdW5jdGlvbiBkZWNvZGVKd3Qoand0KSB7XG4gICAgaWYgKHR5cGVvZiBqd3QgIT09ICdzdHJpbmcnKVxuICAgICAgICB0aHJvdyBuZXcgSldUSW52YWxpZCgnSldUcyBtdXN0IHVzZSBDb21wYWN0IEpXUyBzZXJpYWxpemF0aW9uLCBKV1QgbXVzdCBiZSBhIHN0cmluZycpO1xuICAgIGNvbnN0IHsgMTogcGF5bG9hZCwgbGVuZ3RoIH0gPSBqd3Quc3BsaXQoJy4nKTtcbiAgICBpZiAobGVuZ3RoID09PSA1KVxuICAgICAgICB0aHJvdyBuZXcgSldUSW52YWxpZCgnT25seSBKV1RzIHVzaW5nIENvbXBhY3QgSldTIHNlcmlhbGl6YXRpb24gY2FuIGJlIGRlY29kZWQnKTtcbiAgICBpZiAobGVuZ3RoICE9PSAzKVxuICAgICAgICB0aHJvdyBuZXcgSldUSW52YWxpZCgnSW52YWxpZCBKV1QnKTtcbiAgICBpZiAoIXBheWxvYWQpXG4gICAgICAgIHRocm93IG5ldyBKV1RJbnZhbGlkKCdKV1RzIG11c3QgY29udGFpbiBhIHBheWxvYWQnKTtcbiAgICBsZXQgZGVjb2RlZDtcbiAgICB0cnkge1xuICAgICAgICBkZWNvZGVkID0gYmFzZTY0dXJsKHBheWxvYWQpO1xuICAgIH1cbiAgICBjYXRjaCB7XG4gICAgICAgIHRocm93IG5ldyBKV1RJbnZhbGlkKCdGYWlsZWQgdG8gYmFzZTY0dXJsIGRlY29kZSB0aGUgcGF5bG9hZCcpO1xuICAgIH1cbiAgICBsZXQgcmVzdWx0O1xuICAgIHRyeSB7XG4gICAgICAgIHJlc3VsdCA9IEpTT04ucGFyc2UoZGVjb2Rlci5kZWNvZGUoZGVjb2RlZCkpO1xuICAgIH1cbiAgICBjYXRjaCB7XG4gICAgICAgIHRocm93IG5ldyBKV1RJbnZhbGlkKCdGYWlsZWQgdG8gcGFyc2UgdGhlIGRlY29kZWQgcGF5bG9hZCBhcyBKU09OJyk7XG4gICAgfVxuICAgIGlmICghaXNPYmplY3QocmVzdWx0KSlcbiAgICAgICAgdGhyb3cgbmV3IEpXVEludmFsaWQoJ0ludmFsaWQgSldUIENsYWltcyBTZXQnKTtcbiAgICByZXR1cm4gcmVzdWx0O1xufVxuIl0sIm5hbWVzIjpbXSwiaWdub3JlTGlzdCI6WzBdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/jose/dist/node/esm/util/decode_jwt.js\n");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ }),</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ "(ssr)/./node_modules/jose/dist/node/esm/util/errors.js":</span>
+<span class="cstat-no" title="statement not covered" >/*!********************************************************!*\</span>
+<span class="cstat-no" title="statement not covered" >  !*** ./node_modules/jose/dist/node/esm/util/errors.js ***!</span>
+<span class="cstat-no" title="statement not covered" >  \********************************************************/</span>
+<span class="cstat-no" title="statement not covered" >/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) =&gt; {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   JOSEAlgNotAllowed: () =&gt; (/* binding */ JOSEAlgNotAllowed),\n/* harmony export */   JOSEError: () =&gt; (/* binding */ JOSEError),\n/* harmony export */   JOSENotSupported: () =&gt; (/* binding */ JOSENotSupported),\n/* harmony export */   JWEDecryptionFailed: () =&gt; (/* binding */ JWEDecryptionFailed),\n/* harmony export */   JWEInvalid: () =&gt; (/* binding */ JWEInvalid),\n/* harmony export */   JWKInvalid: () =&gt; (/* binding */ JWKInvalid),\n/* harmony export */   JWKSInvalid: () =&gt; (/* binding */ JWKSInvalid),\n/* harmony export */   JWKSMultipleMatchingKeys: () =&gt; (/* binding */ JWKSMultipleMatchingKeys),\n/* harmony export */   JWKSNoMatchingKey: () =&gt; (/* binding */ JWKSNoMatchingKey),\n/* harmony export */   JWKSTimeout: () =&gt; (/* binding */ JWKSTimeout),\n/* harmony export */   JWSInvalid: () =&gt; (/* binding */ JWSInvalid),\n/* harmony export */   JWSSignatureVerificationFailed: () =&gt; (/* binding */ JWSSignatureVerificationFailed),\n/* harmony export */   JWTClaimValidationFailed: () =&gt; (/* binding */ JWTClaimValidationFailed),\n/* harmony export */   JWTExpired: () =&gt; (/* binding */ JWTExpired),\n/* harmony export */   JWTInvalid: () =&gt; (/* binding */ JWTInvalid)\n/* harmony export */ });\nclass JOSEError extends Error {\n    static code = 'ERR_JOSE_GENERIC';\n    code = 'ERR_JOSE_GENERIC';\n    constructor(message, options) {\n        super(message, options);\n        this.name = this.constructor.name;\n        Error.captureStackTrace?.(this, this.constructor);\n    }\n}\nclass JWTClaimValidationFailed extends JOSEError {\n    static code = 'ERR_JWT_CLAIM_VALIDATION_FAILED';\n    code = 'ERR_JWT_CLAIM_VALIDATION_FAILED';\n    claim;\n    reason;\n    payload;\n    constructor(message, payload, claim = 'unspecified', reason = 'unspecified') {\n        super(message, { cause: { claim, reason, payload } });\n        this.claim = claim;\n        this.reason = reason;\n        this.payload = payload;\n    }\n}\nclass JWTExpired extends JOSEError {\n    static code = 'ERR_JWT_EXPIRED';\n    code = 'ERR_JWT_EXPIRED';\n    claim;\n    reason;\n    payload;\n    constructor(message, payload, claim = 'unspecified', reason = 'unspecified') {\n        super(message, { cause: { claim, reason, payload } });\n        this.claim = claim;\n        this.reason = reason;\n        this.payload = payload;\n    }\n}\nclass JOSEAlgNotAllowed extends JOSEError {\n    static code = 'ERR_JOSE_ALG_NOT_ALLOWED';\n    code = 'ERR_JOSE_ALG_NOT_ALLOWED';\n}\nclass JOSENotSupported extends JOSEError {\n    static code = 'ERR_JOSE_NOT_SUPPORTED';\n    code = 'ERR_JOSE_NOT_SUPPORTED';\n}\nclass JWEDecryptionFailed extends JOSEError {\n    static code = 'ERR_JWE_DECRYPTION_FAILED';\n    code = 'ERR_JWE_DECRYPTION_FAILED';\n    constructor(message = 'decryption operation failed', options) {\n        super(message, options);\n    }\n}\nclass JWEInvalid extends JOSEError {\n    static code = 'ERR_JWE_INVALID';\n    code = 'ERR_JWE_INVALID';\n}\nclass JWSInvalid extends JOSEError {\n    static code = 'ERR_JWS_INVALID';\n    code = 'ERR_JWS_INVALID';\n}\nclass JWTInvalid extends JOSEError {\n    static code = 'ERR_JWT_INVALID';\n    code = 'ERR_JWT_INVALID';\n}\nclass JWKInvalid extends JOSEError {\n    static code = 'ERR_JWK_INVALID';\n    code = 'ERR_JWK_INVALID';\n}\nclass JWKSInvalid extends JOSEError {\n    static code = 'ERR_JWKS_INVALID';\n    code = 'ERR_JWKS_INVALID';\n}\nclass JWKSNoMatchingKey extends JOSEError {\n    static code = 'ERR_JWKS_NO_MATCHING_KEY';\n    code = 'ERR_JWKS_NO_MATCHING_KEY';\n    constructor(message = 'no applicable key found in the JSON Web Key Set', options) {\n        super(message, options);\n    }\n}\nclass JWKSMultipleMatchingKeys extends JOSEError {\n    [Symbol.asyncIterator];\n    static code = 'ERR_JWKS_MULTIPLE_MATCHING_KEYS';\n    code = 'ERR_JWKS_MULTIPLE_MATCHING_KEYS';\n    constructor(message = 'multiple matching keys found in the JSON Web Key Set', options) {\n        super(message, options);\n    }\n}\nclass JWKSTimeout extends JOSEError {\n    static code = 'ERR_JWKS_TIMEOUT';\n    code = 'ERR_JWKS_TIMEOUT';\n    constructor(message = 'request timed out', options) {\n        super(message, options);\n    }\n}\nclass JWSSignatureVerificationFailed extends JOSEError {\n    static code = 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED';\n    code = 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED';\n    constructor(message = 'signature verification failed', options) {\n        super(message, options);\n    }\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL3V0aWwvZXJyb3JzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFPO0FBQ1A7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNPO0FBQ1A7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EseUJBQXlCLFNBQVMsMEJBQTBCO0FBQzVEO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDTztBQUNQO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHlCQUF5QixTQUFTLDBCQUEwQjtBQUM1RDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ087QUFDUDtBQUNBO0FBQ0E7QUFDTztBQUNQO0FBQ0E7QUFDQTtBQUNPO0FBQ1A7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ087QUFDUDtBQUNBO0FBQ0E7QUFDTztBQUNQO0FBQ0E7QUFDQTtBQUNPO0FBQ1A7QUFDQTtBQUNBO0FBQ087QUFDUDtBQUNBO0FBQ0E7QUFDTztBQUNQO0FBQ0E7QUFDQTtBQUNPO0FBQ1A7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ087QUFDUDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNPO0FBQ1A7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ087QUFDUDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIi9ob21lL3dzbHh0L2NzNDcyL2ZhcmNhc3Rlci9ub2RlX21vZHVsZXMvam9zZS9kaXN0L25vZGUvZXNtL3V0aWwvZXJyb3JzLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBKT1NFRXJyb3IgZXh0ZW5kcyBFcnJvciB7XG4gICAgc3RhdGljIGNvZGUgPSAnRVJSX0pPU0VfR0VORVJJQyc7XG4gICAgY29kZSA9ICdFUlJfSk9TRV9HRU5FUklDJztcbiAgICBjb25zdHJ1Y3RvcihtZXNzYWdlLCBvcHRpb25zKSB7XG4gICAgICAgIHN1cGVyKG1lc3NhZ2UsIG9wdGlvbnMpO1xuICAgICAgICB0aGlzLm5hbWUgPSB0aGlzLmNvbnN0cnVjdG9yLm5hbWU7XG4gICAgICAgIEVycm9yLmNhcHR1cmVTdGFja1RyYWNlPy4odGhpcywgdGhpcy5jb25zdHJ1Y3Rvcik7XG4gICAgfVxufVxuZXhwb3J0IGNsYXNzIEpXVENsYWltVmFsaWRhdGlvbkZhaWxlZCBleHRlbmRzIEpPU0VFcnJvciB7XG4gICAgc3RhdGljIGNvZGUgPSAnRVJSX0pXVF9DTEFJTV9WQUxJREFUSU9OX0ZBSUxFRCc7XG4gICAgY29kZSA9ICdFUlJfSldUX0NMQUlNX1ZBTElEQVRJT05fRkFJTEVEJztcbiAgICBjbGFpbTtcbiAgICByZWFzb247XG4gICAgcGF5bG9hZDtcbiAgICBjb25zdHJ1Y3RvcihtZXNzYWdlLCBwYXlsb2FkLCBjbGFpbSA9ICd1bnNwZWNpZmllZCcsIHJlYXNvbiA9ICd1bnNwZWNpZmllZCcpIHtcbiAgICAgICAgc3VwZXIobWVzc2FnZSwgeyBjYXVzZTogeyBjbGFpbSwgcmVhc29uLCBwYXlsb2FkIH0gfSk7XG4gICAgICAgIHRoaXMuY2xhaW0gPSBjbGFpbTtcbiAgICAgICAgdGhpcy5yZWFzb24gPSByZWFzb247XG4gICAgICAgIHRoaXMucGF5bG9hZCA9IHBheWxvYWQ7XG4gICAgfVxufVxuZXhwb3J0IGNsYXNzIEpXVEV4cGlyZWQgZXh0ZW5kcyBKT1NFRXJyb3Ige1xuICAgIHN0YXRpYyBjb2RlID0gJ0VSUl9KV1RfRVhQSVJFRCc7XG4gICAgY29kZSA9ICdFUlJfSldUX0VYUElSRUQnO1xuICAgIGNsYWltO1xuICAgIHJlYXNvbjtcbiAgICBwYXlsb2FkO1xuICAgIGNvbnN0cnVjdG9yKG1lc3NhZ2UsIHBheWxvYWQsIGNsYWltID0gJ3Vuc3BlY2lmaWVkJywgcmVhc29uID0gJ3Vuc3BlY2lmaWVkJykge1xuICAgICAgICBzdXBlcihtZXNzYWdlLCB7IGNhdXNlOiB7IGNsYWltLCByZWFzb24sIHBheWxvYWQgfSB9KTtcbiAgICAgICAgdGhpcy5jbGFpbSA9IGNsYWltO1xuICAgICAgICB0aGlzLnJlYXNvbiA9IHJlYXNvbjtcbiAgICAgICAgdGhpcy5wYXlsb2FkID0gcGF5bG9hZDtcbiAgICB9XG59XG5leHBvcnQgY2xhc3MgSk9TRUFsZ05vdEFsbG93ZWQgZXh0ZW5kcyBKT1NFRXJyb3Ige1xuICAgIHN0YXRpYyBjb2RlID0gJ0VSUl9KT1NFX0FMR19OT1RfQUxMT1dFRCc7XG4gICAgY29kZSA9ICdFUlJfSk9TRV9BTEdfTk9UX0FMTE9XRUQnO1xufVxuZXhwb3J0IGNsYXNzIEpPU0VOb3RTdXBwb3J0ZWQgZXh0ZW5kcyBKT1NFRXJyb3Ige1xuICAgIHN0YXRpYyBjb2RlID0gJ0VSUl9KT1NFX05PVF9TVVBQT1JURUQnO1xuICAgIGNvZGUgPSAnRVJSX0pPU0VfTk9UX1NVUFBPUlRFRCc7XG59XG5leHBvcnQgY2xhc3MgSldFRGVjcnlwdGlvbkZhaWxlZCBleHRlbmRzIEpPU0VFcnJvciB7XG4gICAgc3RhdGljIGNvZGUgPSAnRVJSX0pXRV9ERUNSWVBUSU9OX0ZBSUxFRCc7XG4gICAgY29kZSA9ICdFUlJfSldFX0RFQ1JZUFRJT05fRkFJTEVEJztcbiAgICBjb25zdHJ1Y3RvcihtZXNzYWdlID0gJ2RlY3J5cHRpb24gb3BlcmF0aW9uIGZhaWxlZCcsIG9wdGlvbnMpIHtcbiAgICAgICAgc3VwZXIobWVzc2FnZSwgb3B0aW9ucyk7XG4gICAgfVxufVxuZXhwb3J0IGNsYXNzIEpXRUludmFsaWQgZXh0ZW5kcyBKT1NFRXJyb3Ige1xuICAgIHN0YXRpYyBjb2RlID0gJ0VSUl9KV0VfSU5WQUxJRCc7XG4gICAgY29kZSA9ICdFUlJfSldFX0lOVkFMSUQnO1xufVxuZXhwb3J0IGNsYXNzIEpXU0ludmFsaWQgZXh0ZW5kcyBKT1NFRXJyb3Ige1xuICAgIHN0YXRpYyBjb2RlID0gJ0VSUl9KV1NfSU5WQUxJRCc7XG4gICAgY29kZSA9ICdFUlJfSldTX0lOVkFMSUQnO1xufVxuZXhwb3J0IGNsYXNzIEpXVEludmFsaWQgZXh0ZW5kcyBKT1NFRXJyb3Ige1xuICAgIHN0YXRpYyBjb2RlID0gJ0VSUl9KV1RfSU5WQUxJRCc7XG4gICAgY29kZSA9ICdFUlJfSldUX0lOVkFMSUQnO1xufVxuZXhwb3J0IGNsYXNzIEpXS0ludmFsaWQgZXh0ZW5kcyBKT1NFRXJyb3Ige1xuICAgIHN0YXRpYyBjb2RlID0gJ0VSUl9KV0tfSU5WQUxJRCc7XG4gICAgY29kZSA9ICdFUlJfSldLX0lOVkFMSUQnO1xufVxuZXhwb3J0IGNsYXNzIEpXS1NJbnZhbGlkIGV4dGVuZHMgSk9TRUVycm9yIHtcbiAgICBzdGF0aWMgY29kZSA9ICdFUlJfSldLU19JTlZBTElEJztcbiAgICBjb2RlID0gJ0VSUl9KV0tTX0lOVkFMSUQnO1xufVxuZXhwb3J0IGNsYXNzIEpXS1NOb01hdGNoaW5nS2V5IGV4dGVuZHMgSk9TRUVycm9yIHtcbiAgICBzdGF0aWMgY29kZSA9ICdFUlJfSldLU19OT19NQVRDSElOR19LRVknO1xuICAgIGNvZGUgPSAnRVJSX0pXS1NfTk9fTUFUQ0hJTkdfS0VZJztcbiAgICBjb25zdHJ1Y3RvcihtZXNzYWdlID0gJ25vIGFwcGxpY2FibGUga2V5IGZvdW5kIGluIHRoZSBKU09OIFdlYiBLZXkgU2V0Jywgb3B0aW9ucykge1xuICAgICAgICBzdXBlcihtZXNzYWdlLCBvcHRpb25zKTtcbiAgICB9XG59XG5leHBvcnQgY2xhc3MgSldLU011bHRpcGxlTWF0Y2hpbmdLZXlzIGV4dGVuZHMgSk9TRUVycm9yIHtcbiAgICBbU3ltYm9sLmFzeW5jSXRlcmF0b3JdO1xuICAgIHN0YXRpYyBjb2RlID0gJ0VSUl9KV0tTX01VTFRJUExFX01BVENISU5HX0tFWVMnO1xuICAgIGNvZGUgPSAnRVJSX0pXS1NfTVVMVElQTEVfTUFUQ0hJTkdfS0VZUyc7XG4gICAgY29uc3RydWN0b3IobWVzc2FnZSA9ICdtdWx0aXBsZSBtYXRjaGluZyBrZXlzIGZvdW5kIGluIHRoZSBKU09OIFdlYiBLZXkgU2V0Jywgb3B0aW9ucykge1xuICAgICAgICBzdXBlcihtZXNzYWdlLCBvcHRpb25zKTtcbiAgICB9XG59XG5leHBvcnQgY2xhc3MgSldLU1RpbWVvdXQgZXh0ZW5kcyBKT1NFRXJyb3Ige1xuICAgIHN0YXRpYyBjb2RlID0gJ0VSUl9KV0tTX1RJTUVPVVQnO1xuICAgIGNvZGUgPSAnRVJSX0pXS1NfVElNRU9VVCc7XG4gICAgY29uc3RydWN0b3IobWVzc2FnZSA9ICdyZXF1ZXN0IHRpbWVkIG91dCcsIG9wdGlvbnMpIHtcbiAgICAgICAgc3VwZXIobWVzc2FnZSwgb3B0aW9ucyk7XG4gICAgfVxufVxuZXhwb3J0IGNsYXNzIEpXU1NpZ25hdHVyZVZlcmlmaWNhdGlvbkZhaWxlZCBleHRlbmRzIEpPU0VFcnJvciB7XG4gICAgc3RhdGljIGNvZGUgPSAnRVJSX0pXU19TSUdOQVRVUkVfVkVSSUZJQ0FUSU9OX0ZBSUxFRCc7XG4gICAgY29kZSA9ICdFUlJfSldTX1NJR05BVFVSRV9WRVJJRklDQVRJT05fRkFJTEVEJztcbiAgICBjb25zdHJ1Y3RvcihtZXNzYWdlID0gJ3NpZ25hdHVyZSB2ZXJpZmljYXRpb24gZmFpbGVkJywgb3B0aW9ucykge1xuICAgICAgICBzdXBlcihtZXNzYWdlLCBvcHRpb25zKTtcbiAgICB9XG59XG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbMF0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/jose/dist/node/esm/util/errors.js\n");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >/***/ })</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >};</span>
+<span class="cstat-no" title="statement not covered" >;</span></pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-10-19T07:19:20.045Z
+            </div>
+        <script src="../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../sorter.js"></script>
+        <script src="../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

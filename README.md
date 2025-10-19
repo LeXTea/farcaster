@@ -10,7 +10,7 @@ Develop tools and application testing for UNLV capstone
 2. Install the farcaster stuff:
 
     ```npm install @farcaster/miniapp-wagmi-connector```
-    
+
     ```npm install @farcaster/frame-sdk```
 
 
@@ -75,3 +75,77 @@ The ui directory holds the header and footer to edit the menu
 
 The files labled ***(old)
 are the original files provided by farcaster, look in their for ideas on how to do things
+
+----------------------------------------------------------------------
+
+## Testing ##
+
+**Makefile**
+- "backend-test", "backend-coverage", "frontend-test", "frontend-coverage"
+
+#### **Frontend Tests**
+1. **Framework**: Vitest
+2. **How to Run Tests**:
+   - Run all tests:
+     ```bash
+     npm run test
+     ```
+   - Run tests with coverage:
+     ```bash
+     npm run test:coverage
+     ```
+3. **Coverage Report**:
+   - Coverage results will be displayed in the terminal.
+   - Detailed HTML reports are generated in the `./coverage` directory. Open `index.html` in a browser to view.
+4. **Where to Write Tests**:
+   - Place frontend test files in the `src/components/__tests__/` directory.
+   - Use the `.test.tsx` or `.test.js` extension for test files.
+   - Example:
+     ```tsx
+     import { render, screen } from '@testing-library/react';
+     import React from 'react';
+
+     function ExampleComponent() {
+       return <div>Hello, World!</div>;
+     }
+
+     test('renders the example component', () => {
+       render(<ExampleComponent />);
+       expect(screen.getByText('Hello, World!')).toBeInTheDocument();
+     });
+     ```
+
+---
+
+#### **Backend Tests**
+1. **Framework**: Pytest
+2. **How to Run Tests**:
+   - Run all tests:
+     ```bash
+     pytest
+     ```
+   - Run tests with coverage:
+     ```bash
+     pytest --cov
+     ```
+3. **Coverage Report**:
+   - Coverage results will be displayed in the terminal.
+   - Detailed reports (if configured) are generated in the `htmlcov` directory. Open `index.html` in a browser to view.
+4. **Where to Write Tests**:
+   - Place backend test files in the `tests/` directory.
+   - Use the `test_*.py` naming convention for test files.
+   - Example:
+     ```python
+     from app import app
+
+     def test_home():
+         response = app.test_client().get('/')
+         assert response.status_code == 200
+         assert b"Welcome" in response.data
+     ```
+
+---
+
+### Summary of Test Locations
+- **Frontend Tests**: `src/components/__tests__/`
+- **Backend Tests**: `tests/`
