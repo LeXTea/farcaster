@@ -1,4 +1,6 @@
 /node_modules
 /build
-/scripts
 /venv
+/coverage
+/tests/py-tests/__pycache__
+.coverage

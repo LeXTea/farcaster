@@ -10,7 +10,7 @@ Develop tools and application testing for UNLV capstone
 2. Install the farcaster stuff:
 
     ```npm install @farcaster/miniapp-wagmi-connector```
-    
+
     ```npm install @farcaster/frame-sdk```
 
 
@@ -75,3 +75,16 @@ The ui directory holds the header and footer to edit the menu
 
 The files labled ***(old)
 are the original files provided by farcaster, look in their for ideas on how to do things
+
+---------------------------------------------------------------------
+
+## Testing ##
+Pytest and pytest-coverage for testing backend python. Vitest and c8 for testing frontend JS and TS.
+
+### Test Commands ###
+- To check JS/TS, run `make frontend-test`
+- To check python, run `make backend-test`
+
+### Test File Locations ###
+- JS/TS located in `tests/js-ts-tests/`
+- Python located in `tests/py-tests/`
