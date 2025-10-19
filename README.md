@@ -92,6 +92,7 @@ Pytest and pytest-coverage for testing backend python. Vitest and c8 for testing
 ### Test Commands ###
 - To check JS/TS, run `make frontend-test`
 - To check python, run `make backend-test`
+    - If you encounter an error about python missing, ensure you activated venv like installation setup 5b.
 
 ### Test File Locations ###
 - JS/TS located in `tests/js-ts-tests/`
