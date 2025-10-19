@@ -25,8 +25,16 @@ Develop tools and application testing for UNLV capstone
 
     ```npm install```
 
+5. Setup python venv and activate:
 
-5. Run the dev server:
+    a. ```python -m venv venv``` or ```python3 -m venv venv```
+    b. ```source venv/bin/activate```
+
+6. Run pip install:
+
+    ```pip install -r requirements.txt```
+
+7. Run the dev server:
 
     ```npm run dev```
 
