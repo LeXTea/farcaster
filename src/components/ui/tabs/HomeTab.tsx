@@ -67,7 +67,7 @@ function FirstVisitDisclaimer() {
 }
 /* ------------------------------------------------------------------ */
 
-/* ---------------- Daily Reward Chest (red version) ---------------- */
+/* ---------------- Daily Reward Chest ---------------- */
 function DailyRewardChest() {
   const LS_KEY = "dailyRewardLastClaim";
   const DAY_MS = 24 * 60 * 60 * 1000;
@@ -217,7 +217,7 @@ export function HomeTab() {
                   <div className="flex flex-col">
                     <h3 className="text-lg font-bold mb-0.5">Test Name 1</h3>
                     <span className="text-sm text-red-400 animate-pulse drop-shadow-[0_0_6px_var(--tw-shadow-color)] [--tw-shadow-color:theme(colors.red.400)]">
-                      On a Heater
+                      🔥 On a Heater
                     </span>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ export function HomeTab() {
                   </Avatar>
                   <div className="flex flex-col">
                     <h3 className="text-lg font-bold mb-0.5">Test Name 2</h3>
-                    <span className="text-sm text-blue-400 animate-pulse">Day One Player</span>
+                    <span className="text-sm text-blue-400 animate-pulse">🎉 Day One Player</span>
                   </div>
                 </div>
                 <span className="text-green-400 font-bold text-lg">$9,820</span>
@@ -246,8 +246,8 @@ export function HomeTab() {
                   </Avatar>
                   <div className="flex flex-col">
                     <h3 className="text-lg font-bold mb-0.5">Test Name 3</h3>
-                    <span className="text-sm text-green-400 animate-pulse">Slow &amp; Steady</span>
-                  </div>
+                    <span className="text-sm text-green-400 animate-pulse">🐢 Slow &amp; Steady</span>
+                  </div> 
                 </div>
                 <span className="text-green-400 font-bold text-lg">$7,530</span>
               </div>
@@ -260,7 +260,7 @@ export function HomeTab() {
                   </Avatar>
                   <div className="flex flex-col">
                     <h3 className="text-lg font-bold mb-0.5">Test Name 4</h3>
-                    <span className="text-sm text-yellow-400 animate-pulse">High Roller</span>
+                    <span className="text-sm text-yellow-400 animate-pulse">💰 High Roller</span>
                   </div>
                 </div>
                 <span className="text-green-400 font-bold text-lg">$5,420</span>
@@ -274,7 +274,7 @@ export function HomeTab() {
                   </Avatar>
                   <div className="flex flex-col">
                     <h3 className="text-lg font-bold mb-0.5">Test Name 5</h3>
-                    <span className="text-sm text-purple-400 animate-pulse">VIP Elite</span>
+                    <span className="text-sm text-purple-400 animate-pulse">👑 VIP Elite</span>
                   </div>
                 </div>
                 <span className="text-green-400 font-bold text-lg">$4,110</span>
@@ -282,7 +282,7 @@ export function HomeTab() {
             </div>
           </div>
         </Card>
-      </section>
+  </section>
 
       {/* Static disclaimer directly below the Leaderboard */}
       <section className="mt-6 text-center border-t border-border pt-4 text-sm text-muted-foreground">
