@@ -1,31 +1,40 @@
 ---
 name: New Feature
 about: Suggest/Implement an idea for this project
-title: ''
+title: "[Feature]: "
 labels: enhancement
 assignees: ''
 
 ---
 
-**Detailed Description**
-A clear and concise description of the new feature that you like to see implement. Add additional context if needed. (i.e, Why is this important?, How can this benefit others?)
+## Description
+Provide a clear and concise description of the feature you’d like to see implemented.  
+Include **why this feature is important** and **how it could benefit others**.
 
-**Describe a solution (if applicable)**
-A clear and concise decription of how can this idea be implement.
+---
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Proposed Solution
+If you have an idea for how this could be implemented, describe it here.  
+Be as specific as possible.
 
-**Possible Implementation**
-Any suggestions that can help improve features/ideas
+---
 
-**Tasks**
-- [ ] Discuss/brainstrom...
-- [ ] Design...
-- [ ] etc...
+## Implementation Ideas
+Any thoughts, mockups, or suggestions that could help improve or design this feature.
 
-**Page**
-If applicable, what page will this affect?
+---
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## Tasks
+List the main steps required for this feature.  
+(This is example)
+- [ ] Discuss / brainstorm
+- [ ] Design implementation
+- [ ] Development
+- [ ] Testing
+- [ ] Documentation
+
+## Affected Pages/Componenets
+If applicable, list which pages, files, or components this feature will affect.
+
+## Additional Context
+Add any other context, references, or screenshots related to the request.
