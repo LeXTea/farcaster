@@ -11,6 +11,9 @@ assignees: ''
 Provide a clear and concise description of the feature you’d like to see implemented.  
 Include **why this feature is important** and **how it could benefit others**.
 
+**Related Pull Request:**
+If applicable. 
+
 ---
 
 ## Proposed Solution
