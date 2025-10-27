@@ -9,22 +9,78 @@ import { Card } from "~/components/ui/card";
 import { startWhiteBars } from "./whiteBars";
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
 
-/* ---------------- Daily Reward Chest (red version) ---------------- */
+/* ---------------- First-Visit Disclaimer ---------------- */
+function FirstVisitDisclaimer() {
+  const KEY = "disclaimerAccepted";
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const ok = typeof window !== "undefined" ? localStorage.getItem(KEY) : "1";
+    if (!ok) setOpen(true);
+  }, []);
+
+  useEffect(() => {
+    if (open) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  function accept() {
+    localStorage.setItem(KEY, "1");
+    setOpen(false);
+  }
+
+  if (!open) return null;
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4"
+    >
+      <div className="w-full max-w-md rounded-xl border bg-card shadow-xl">
+        <div className="border-b px-5 py-4">
+          <h3 className="text-lg font-semibold">Disclaimer</h3>
+        </div>
+        <div className="px-5 py-4 space-y-3 text-sm">
+          <p>
+            This app uses a simulated, non-monetary currency for entertainment and testing only.
+            Balances, rewards, and wagers have no real-world value and cannot be bought, sold, or redeemed for money or goods.
+          </p>
+          <p>
+            By selecting Accept, you confirm you understand this is not real gambling and agree to use the app accordingly.
+          </p>
+        </div>
+        <div className="flex items-center justify-end gap-2 px-5 py-4 border-t">
+          <button
+            onClick={accept}
+            className="inline-flex items-center rounded-md border px-4 py-2 text-sm font-medium transition hover:bg-accent"
+          >
+            Accept
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+/* ------------------------------------------------------------------ */
+
+/* ---------------- Daily Reward Chest ---------------- */
 function DailyRewardChest() {
   const LS_KEY = "dailyRewardLastClaim";
   const DAY_MS = 24 * 60 * 60 * 1000;
-  const accent = "#ff3b3b"; // 🔴 red color
+  const accent = "#ff3b3b";
 
   const [lastClaim, setLastClaim] = useState<number | null>(null);
   const [now, setNow] = useState<number>(Date.now());
 
-  // Load saved timestamp once
   useEffect(() => {
     const stored = typeof window !== "undefined" ? localStorage.getItem(LS_KEY) : null;
     if (stored) setLastClaim(Number(stored));
   }, []);
 
-  // Tick every second for countdown
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(id);
@@ -49,12 +105,11 @@ function DailyRewardChest() {
     const t = Date.now();
     localStorage.setItem(LS_KEY, String(t));
     setLastClaim(t);
-    alert("🎁 You claimed your daily reward!");
+    alert("You claimed your daily reward.");
   }
 
   return (
     <div className="flex items-center justify-end mb-4 mt-4 pr-4 select-none">
-      {/* Timer */}
       <div className="text-right leading-tight mr-3">
         <div className="text-xs text-muted-foreground">Daily Reward</div>
         {available ? (
@@ -66,7 +121,6 @@ function DailyRewardChest() {
         )}
       </div>
 
-      {/* Chest button */}
       <button
         onClick={claim}
         disabled={!available}
@@ -79,13 +133,9 @@ function DailyRewardChest() {
           background: "linear-gradient(180deg, rgba(255,59,59,0.15), rgba(255,59,59,0.06))",
         }}
       >
-        {/* Chest icon */}
         <div className="relative w-12 h-10">
-          {/* Base */}
           <div className="absolute bottom-0 left-0 right-0 h-7 rounded-b-md" style={{ background: accent }} />
-          {/* Lid */}
           <div className="absolute -top-1 left-0 right-0 h-5 rounded-t-md" style={{ background: accent }} />
-          {/* Lock */}
           <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-3 h-4 rounded-sm bg-yellow-400" />
         </div>
       </button>
@@ -109,15 +159,15 @@ export function HomeTab() {
 
   return (
     <div className="">
+      <FirstVisitDisclaimer />
 
       <section>
-  <div className="mt-4 mb-4 flex items-center justify-between">
-    <h2 className="text-xl font-bold">Upcoming Races</h2>
-    <DailyRewardChest />
-  </div>
-  <div id="white-bars-root" className="space-y-3" />
-</section>
-
+        <div className="mt-4 mb-4 flex items-center justify-between">
+          <h2 className="text-xl font-bold">Upcoming Races</h2>
+          <DailyRewardChest />
+        </div>
+        <div id="white-bars-root" className="space-y-3" />
+      </section>
 
       <section>
         <h2 className="text-xl font-bold mt-4 mb-4">Your Stats</h2>
@@ -196,8 +246,8 @@ export function HomeTab() {
                   </Avatar>
                   <div className="flex flex-col">
                     <h3 className="text-lg font-bold mb-0.5">Test Name 3</h3>
-                    <span className="text-sm text-green-400 animate-pulse">🐢 Slow & Steady</span>
-                  </div>
+                    <span className="text-sm text-green-400 animate-pulse">🐢 Slow &amp; Steady</span>
+                  </div> 
                 </div>
                 <span className="text-green-400 font-bold text-lg">$7,530</span>
               </div>
@@ -232,6 +282,20 @@ export function HomeTab() {
             </div>
           </div>
         </Card>
+  </section>
+
+      {/* Static disclaimer directly below the Leaderboard */}
+      <section className="mt-6 text-center border-t border-border pt-4 text-sm text-muted-foreground">
+        <p className="max-w-lg mx-auto">
+          This platform uses fake in-game currency purely for entertainment and testing purposes.
+          No real money or items of value are involved.
+        </p>
+        <button
+          onClick={() => localStorage.removeItem("disclaimerAccepted") || window.location.reload()}
+          className="mt-3 inline-flex items-center justify-center rounded-md border px-4 py-1 text-xs font-medium hover:bg-accent"
+        >
+          View Disclaimer
+        </button>
       </section>
     </div>
   );
