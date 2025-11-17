@@ -75,7 +75,10 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
     "@types/inquirer": "^9.0.8",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -86,6 +89,8 @@
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
     "inquirer": "^10.2.2",
+    "jest": "^30.2.0",
+    "jsdom": "^27.2.0",
     "localtunnel": "^2.0.2",
     "pino-pretty": "^13.0.0",
     "postcss": "^8",
@@ -94,6 +99,7 @@
     "tsx": "^4.20.5",
     "typescript": "^5",
     "vite": "^7.1.9",
+    "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4"
   },
   "resolutions": {
